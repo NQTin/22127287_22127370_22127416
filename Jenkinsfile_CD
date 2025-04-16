@@ -16,13 +16,13 @@ pipeline {
     
     environment {
         NAMESPACE = "developer-${BUILD_NUMBER}"
-        DOCKER_REGISTRY = 'chitaialm/petclinic'
+        DOCKER_REGISTRY = 'tinnqforwork/petclinic'
     }
     
     stages {
         stage('Checkout Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Taihoclaptrinh/testtt.git'
+                git branch: 'main', url: 'https://github.com/NQTin/22127287_22127370_22127416'
             }
         }
 
@@ -108,7 +108,7 @@ pipeline {
 def getCommitId(serviceName, branch) {
     def cleanBranch = branch.trim()
     def commitId = sh(
-        script: "git ls-remote https://github.com/Taihoclaptrinh/testtt.git refs/heads/${cleanBranch} | cut -f 1 | head -n 1",
+        script: "git ls-remote https://github.com/NQTin/22127287_22127370_22127416.git refs/heads/${cleanBranch} | cut -f 1 | head -n 1",
         returnStdout: true
     ).trim().take(7)
 
