@@ -92,7 +92,7 @@ pipeline {
         stage('Show Delete Link') {
             steps {
                 echo "Current build: ${env.BUILD_URL}"
-                echo "Delete deployment: ${env.JENKINS_URL}job/Spring-Petclinic-Microservices/job/delete-deployment/buildWithParameters?delete-token&BUILD_NUMBER_TO_DELETE=${env.BUILD_NUMBER}"
+                echo "Delete deployment: ${env.JENKINS_URL}job/Spring-Petclinic-Microservices/job/delete-deployment/parambuild?delete-token&BUILD_NUMBER_TO_DELETE=${env.BUILD_NUMBER}"
             }
         }
     }
