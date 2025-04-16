@@ -22,7 +22,7 @@ pipeline {
     stages {
         stage('Checkout Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/NQTin/22127287_22127370_22127416'
+                git branch: 'main', url: 'https://github.com/NQTin/22127287_22127370_22127416.git'
             }
         }
 
