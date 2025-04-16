@@ -1,4 +1,4 @@
-namespace: developer-86
+# namespace: developer-86
 version: 'main'
 services:
   config-server:
@@ -45,7 +45,7 @@ services:
     port: 8080
     ingress:
       enabled: true
-      host: petclinic-dev.tech
+      host: petclinic-staging.tech
   admin-server:
     containerName: admin-server
     image: chitaialm/petclinic
