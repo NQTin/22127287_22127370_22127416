@@ -16,7 +16,7 @@ pipeline {
     
     environment {
         NAMESPACE = "developer-${BUILD_NUMBER}"
-        DOCKER_REGISTRY = 'tinnqforwork/petclinic'
+        // DOCKER_REGISTRY = 'tinnqforwork/petclinic'
     }
     
     stages {
